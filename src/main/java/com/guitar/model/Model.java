@@ -11,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.NamedQuery;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @NamedQuery(name="Model.findAllModelsByType", query="select m from Model m where m.modelType.name = :name")
@@ -19,6 +20,7 @@ public class Model {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 
+	@NotNull
 	private String name;	
 	private BigDecimal price;
 	private int frets;
