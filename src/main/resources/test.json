@@ -1,0 +1,3510 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"description": "Api Documentation",
+		"version": "1.0",
+		"title": "Api Documentation",
+		"termsOfService": "urn:tos",
+		"contact": {
+			
+		},
+		"license": {
+			"name": "Apache 2.0",
+			"url": "http://www.apache.org/licenses/LICENSE-2.0"
+		}
+	},
+	"host": "localhost:8080",
+	"basePath": "/sample",
+	"tags": {
+		"name": "basic-error-controller",
+		"description": "Basic Error Controller"
+	}],
+	"paths": {
+		"/api": {
+			"get": {
+				"tags": [
+					"repository-controller"
+				],
+				"summary": "listRepositories",
+				"operationId": "listRepositoriesUsingGET",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/RepositoryLinksResource"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"head": {
+				"tags": [
+					"repository-controller"
+				],
+				"summary": "headForRepositories",
+				"operationId": "headForRepositoriesUsingHEAD",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "object"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			},
+			"options": {
+				"tags": [
+					"repository-controller"
+				],
+				"summary": "optionsForRepositories",
+				"operationId": "optionsForRepositoriesUsingOPTIONS",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "object"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			}
+		},
+		"/api/": {
+			"get": {
+				"tags": [
+					"repository-controller"
+				],
+				"summary": "listRepositories",
+				"operationId": "listRepositoriesUsingGET_1",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/RepositoryLinksResource"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"head": {
+				"tags": [
+					"repository-controller"
+				],
+				"summary": "headForRepositories",
+				"operationId": "headForRepositoriesUsingHEAD_1",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "object"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			},
+			"options": {
+				"tags": [
+					"repository-controller"
+				],
+				"summary": "optionsForRepositories",
+				"operationId": "optionsForRepositoriesUsingOPTIONS_1",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "object"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			}
+		},
+		"/api/locations": {
+			"get": {
+				"tags": [
+					"Location Entity"
+				],
+				"summary": "getCollectionResource",
+				"operationId": "getCollectionResourceUsingGET",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Resources«Location»"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"head": {
+				"tags": [
+					"Location Entity"
+				],
+				"summary": "headCollectionResource",
+				"operationId": "headCollectionResourceUsingHEAD",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			},
+			"post": {
+				"tags": [
+					"Location Entity"
+				],
+				"summary": "postCollectionResource",
+				"operationId": "postCollectionResourceUsingPOST",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"parameters": {
+					"in": "body",
+					"name": "payload",
+					"description": "payload",
+					"required": true,
+					"schema": {
+						"$ref": "#/definitions/Location"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Resource«Location»"
+						}
+					},
+					"201": {
+						"description": "Created"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"options": {
+				"tags": [
+					"Location Entity"
+				],
+				"summary": "optionsForCollectionResource",
+				"operationId": "optionsForCollectionResourceUsingOPTIONS",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			}
+		},
+		"/api/locations/search/findByStateIgnoreCaseStartingWith": {
+			"get": {
+				"tags": [
+					"Location Entity Search"
+				],
+				"summary": "/findByStateIgnoreCaseStartingWith",
+				"operationId": "/findByStateIgnoreCaseStartingWithUsingGET",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json",
+					"application/x-spring-data-compact+json"
+				],
+				"parameters": {
+					"name": "stateName",
+					"in": "query",
+					"description": "stateName",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Location"
+							}
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/api/locations/search/findByStateIsOrCountryEquals": {
+			"get": {
+				"tags": [
+					"Location Entity Search"
+				],
+				"summary": "/findByStateIsOrCountryEquals",
+				"operationId": "/findByStateIsOrCountryEqualsUsingGET",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json",
+					"application/x-spring-data-compact+json"
+				],
+				"parameters": {
+					"name": "param1",
+					"in": "query",
+					"description": "param1",
+					"required": false,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Location"
+							}
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/api/locations/search/findByStateNot": {
+			"get": {
+				"tags": [
+					"Location Entity Search"
+				],
+				"summary": "/findByStateNot",
+				"operationId": "/findByStateNotUsingGET",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json",
+					"application/x-spring-data-compact+json"
+				],
+				"parameters": {
+					"name": "stateName",
+					"in": "query",
+					"description": "stateName",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Location"
+							}
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/api/locations/search/findByStateNotLikeOrderByStateAsc": {
+			"get": {
+				"tags": [
+					"Location Entity Search"
+				],
+				"summary": "/findByStateNotLikeOrderByStateAsc",
+				"operationId": "/findByStateNotLikeOrderByStateAscUsingGET",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json",
+					"application/x-spring-data-compact+json"
+				],
+				"parameters": {
+					"name": "stateName",
+					"in": "query",
+					"description": "stateName",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Location"
+							}
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/api/locations/search/findFirstByStateIgnoreCaseStartingWith": {
+			"get": {
+				"tags": [
+					"Location Entity Search"
+				],
+				"summary": "/findFirstByStateIgnoreCaseStartingWith",
+				"operationId": "/findFirstByStateIgnoreCaseStartingWithUsingGET",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json",
+					"application/x-spring-data-compact+json"
+				],
+				"parameters": {
+					"name": "stateName",
+					"in": "query",
+					"description": "stateName",
+					"required": true,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Location"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/api/locations/{id}": {
+			"get": {
+				"tags": [
+					"Location Entity"
+				],
+				"summary": "getItemResource",
+				"operationId": "getItemResourceUsingGET",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"parameters": {
+					"name": "id",
+					"in": "path",
+					"description": "id",
+					"required": true,
+					"type": "integer",
+					"format": "int64"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Resources«Location»"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"head": {
+				"tags": [
+					"Location Entity"
+				],
+				"summary": "headForItemResource",
+				"operationId": "headForItemResourceUsingHEAD",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"parameters": {
+					"name": "id",
+					"in": "path",
+					"description": "id",
+					"required": true,
+					"type": "integer",
+					"format": "int64"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			},
+			"put": {
+				"tags": [
+					"Location Entity"
+				],
+				"summary": "putItemResource",
+				"operationId": "putItemResourceUsingPUT",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"parameters": {
+					"name": "id",
+					"in": "path",
+					"description": "id",
+					"required": true,
+					"type": "integer",
+					"format": "int64"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Resources«Location»"
+						}
+					},
+					"201": {
+						"description": "Created"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"delete": {
+				"tags": [
+					"Location Entity"
+				],
+				"summary": "deleteItemResource",
+				"operationId": "deleteItemResourceUsingDELETE",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"parameters": {
+					"name": "id",
+					"in": "path",
+					"description": "id",
+					"required": true,
+					"type": "integer",
+					"format": "int64"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Resources«Location»"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			},
+			"options": {
+				"tags": [
+					"Location Entity"
+				],
+				"summary": "optionsForItemResource",
+				"operationId": "optionsForItemResourceUsingOPTIONS",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			},
+			"patch": {
+				"tags": [
+					"Location Entity"
+				],
+				"summary": "patchItemResource",
+				"operationId": "patchItemResourceUsingPATCH",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"parameters": {
+					"name": "id",
+					"in": "path",
+					"description": "id",
+					"required": true,
+					"type": "integer",
+					"format": "int64"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Resources«Location»"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			}
+		},
+		"/api/mfgs": {
+			"get": {
+				"tags": [
+					"Manufacturer Entity"
+				],
+				"summary": "getCollectionResourceCompact",
+				"operationId": "getCollectionResourceCompactUsingGET_1",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"text/uri-list",
+					"application/x-spring-data-compact+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Resources«Link»"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"head": {
+				"tags": [
+					"Manufacturer Entity"
+				],
+				"summary": "headCollectionResource",
+				"operationId": "headCollectionResourceUsingHEAD_1",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			},
+			"post": {
+				"tags": [
+					"Manufacturer Entity"
+				],
+				"summary": "postCollectionResource",
+				"operationId": "postCollectionResourceUsingPOST_1",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"parameters": {
+					"in": "body",
+					"name": "payload",
+					"description": "payload",
+					"required": true,
+					"schema": {
+						"$ref": "#/definitions/Manufacturer"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Resource«Manufacturer»"
+						}
+					},
+					"201": {
+						"description": "Created"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"options": {
+				"tags": [
+					"Manufacturer Entity"
+				],
+				"summary": "optionsForCollectionResource",
+				"operationId": "optionsForCollectionResourceUsingOPTIONS_1",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			}
+		},
+		"/api/mfgs/search/findByActiveFalse": {
+			"get": {
+				"tags": [
+					"Manufacturer Entity Search"
+				],
+				"summary": "/findByActiveFalse",
+				"operationId": "/findByActiveFalseUsingGET",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json",
+					"application/x-spring-data-compact+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Manufacturer"
+							}
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/api/mfgs/search/findByActiveTrue": {
+			"get": {
+				"tags": [
+					"Manufacturer Entity Search"
+				],
+				"summary": "/findByActiveTrue",
+				"operationId": "/findByActiveTrueUsingGET",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json",
+					"application/x-spring-data-compact+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Manufacturer"
+							}
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/api/mfgs/search/findByFoundedDateBefore": {
+			"get": {
+				"tags": [
+					"Manufacturer Entity Search"
+				],
+				"summary": "/findByFoundedDateBefore",
+				"operationId": "/findByFoundedDateBeforeUsingGET",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json",
+					"application/x-spring-data-compact+json"
+				],
+				"parameters": {
+					"name": "param0",
+					"in": "query",
+					"description": "param0",
+					"required": false,
+					"type": "string",
+					"format": "date-time"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Manufacturer"
+							}
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/api/mfgs/search/getAllThatSellAcoustics": {
+			"get": {
+				"tags": [
+					"Manufacturer Entity Search"
+				],
+				"summary": "/getAllThatSellAcoustics",
+				"operationId": "/getAllThatSellAcousticsUsingGET",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json",
+					"application/x-spring-data-compact+json"
+				],
+				"parameters": {
+					"name": "param0",
+					"in": "query",
+					"description": "param0",
+					"required": false,
+					"type": "string"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Manufacturer"
+							}
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/api/mfgs/{id}": {
+			"get": {
+				"tags": [
+					"Manufacturer Entity"
+				],
+				"summary": "getItemResource",
+				"operationId": "getItemResourceUsingGET_1",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"parameters": {
+					"name": "id",
+					"in": "path",
+					"description": "id",
+					"required": true,
+					"type": "integer",
+					"format": "int64"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Resources«Manufacturer»"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"head": {
+				"tags": [
+					"Manufacturer Entity"
+				],
+				"summary": "headForItemResource",
+				"operationId": "headForItemResourceUsingHEAD_1",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"parameters": {
+					"name": "id",
+					"in": "path",
+					"description": "id",
+					"required": true,
+					"type": "integer",
+					"format": "int64"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			},
+			"put": {
+				"tags": [
+					"Manufacturer Entity"
+				],
+				"summary": "putItemResource",
+				"operationId": "putItemResourceUsingPUT_1",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"parameters": {
+					"name": "id",
+					"in": "path",
+					"description": "id",
+					"required": true,
+					"type": "integer",
+					"format": "int64"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Resources«Manufacturer»"
+						}
+					},
+					"201": {
+						"description": "Created"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"delete": {
+				"tags": [
+					"Manufacturer Entity"
+				],
+				"summary": "deleteItemResource",
+				"operationId": "deleteItemResourceUsingDELETE_1",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"parameters": {
+					"name": "id",
+					"in": "path",
+					"description": "id",
+					"required": true,
+					"type": "integer",
+					"format": "int64"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Resources«Manufacturer»"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			},
+			"options": {
+				"tags": [
+					"Manufacturer Entity"
+				],
+				"summary": "optionsForItemResource",
+				"operationId": "optionsForItemResourceUsingOPTIONS_1",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			},
+			"patch": {
+				"tags": [
+					"Manufacturer Entity"
+				],
+				"summary": "patchItemResource",
+				"operationId": "patchItemResourceUsingPATCH_1",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"parameters": {
+					"name": "id",
+					"in": "path",
+					"description": "id",
+					"required": true,
+					"type": "integer",
+					"format": "int64"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Resources«Manufacturer»"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			}
+		},
+		"/api/modelTypes": {
+			"get": {
+				"tags": [
+					"ModelType Entity"
+				],
+				"summary": "getCollectionResourceCompact",
+				"operationId": "getCollectionResourceCompactUsingGET_3",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"text/uri-list",
+					"application/x-spring-data-compact+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Resources«Link»"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"head": {
+				"tags": [
+					"ModelType Entity"
+				],
+				"summary": "headCollectionResource",
+				"operationId": "headCollectionResourceUsingHEAD_3",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			},
+			"post": {
+				"tags": [
+					"ModelType Entity"
+				],
+				"summary": "postCollectionResource",
+				"operationId": "postCollectionResourceUsingPOST_3",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"parameters": {
+					"in": "body",
+					"name": "payload",
+					"description": "payload",
+					"required": true,
+					"schema": {
+						"$ref": "#/definitions/ModelType"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Resource«ModelType»"
+						}
+					},
+					"201": {
+						"description": "Created"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"options": {
+				"tags": [
+					"ModelType Entity"
+				],
+				"summary": "optionsForCollectionResource",
+				"operationId": "optionsForCollectionResourceUsingOPTIONS_3",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			}
+		},
+		"/api/modelTypes/search": {
+			"get": {
+				"tags": [
+					"ModelType Entity Search"
+				],
+				"summary": "listSearches",
+				"operationId": "listSearchesUsingGET",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/RepositorySearchesResource"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"head": {
+				"tags": [
+					"ModelType Entity Search"
+				],
+				"summary": "headForSearches",
+				"operationId": "headForSearchesUsingHEAD",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/HttpEntity"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			},
+			"options": {
+				"tags": [
+					"ModelType Entity Search"
+				],
+				"summary": "optionsForSearches",
+				"operationId": "optionsForSearchesUsingOPTIONS",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/HttpEntity"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			}
+		},
+		"/api/modelTypes/search/findByNameIsNull": {
+			"get": {
+				"tags": [
+					"ModelType Entity Search"
+				],
+				"summary": "/findByNameIsNull",
+				"operationId": "/findByNameIsNullUsingGET",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json",
+					"application/x-spring-data-compact+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/ModelType"
+							}
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/api/modelTypes/{id}": {
+			"get": {
+				"tags": [
+					"ModelType Entity"
+				],
+				"summary": "getItemResource",
+				"operationId": "getItemResourceUsingGET_3",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"parameters": {
+					"name": "id",
+					"in": "path",
+					"description": "id",
+					"required": true,
+					"type": "integer",
+					"format": "int64"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Resources«ModelType»"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"head": {
+				"tags": [
+					"ModelType Entity"
+				],
+				"summary": "headForItemResource",
+				"operationId": "headForItemResourceUsingHEAD_3",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"parameters": {
+					"name": "id",
+					"in": "path",
+					"description": "id",
+					"required": true,
+					"type": "integer",
+					"format": "int64"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			},
+			"put": {
+				"tags": [
+					"ModelType Entity"
+				],
+				"summary": "putItemResource",
+				"operationId": "putItemResourceUsingPUT_3",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"parameters": {
+					"name": "id",
+					"in": "path",
+					"description": "id",
+					"required": true,
+					"type": "integer",
+					"format": "int64"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Resources«ModelType»"
+						}
+					},
+					"201": {
+						"description": "Created"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"delete": {
+				"tags": [
+					"ModelType Entity"
+				],
+				"summary": "deleteItemResource",
+				"operationId": "deleteItemResourceUsingDELETE_3",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"parameters": {
+					"name": "id",
+					"in": "path",
+					"description": "id",
+					"required": true,
+					"type": "integer",
+					"format": "int64"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Resources«ModelType»"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			},
+			"options": {
+				"tags": [
+					"ModelType Entity"
+				],
+				"summary": "optionsForItemResource",
+				"operationId": "optionsForItemResourceUsingOPTIONS_3",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			},
+			"patch": {
+				"tags": [
+					"ModelType Entity"
+				],
+				"summary": "patchItemResource",
+				"operationId": "patchItemResourceUsingPATCH_3",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"parameters": {
+					"name": "id",
+					"in": "path",
+					"description": "id",
+					"required": true,
+					"type": "integer",
+					"format": "int64"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Resources«ModelType»"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			}
+		},
+		"/api/models": {
+			"get": {
+				"tags": [
+					"Model Entity"
+				],
+				"summary": "getCollectionResourceCompact",
+				"operationId": "getCollectionResourceCompactUsingGET_2",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"text/uri-list",
+					"application/x-spring-data-compact+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Resources«Link»"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"head": {
+				"tags": [
+					"Model Entity"
+				],
+				"summary": "headCollectionResource",
+				"operationId": "headCollectionResourceUsingHEAD_2",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			},
+			"post": {
+				"tags": [
+					"Model Entity"
+				],
+				"summary": "postCollectionResource",
+				"operationId": "postCollectionResourceUsingPOST_2",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"parameters": {
+					"in": "body",
+					"name": "payload",
+					"description": "payload",
+					"required": true,
+					"schema": {
+						"$ref": "#/definitions/Model"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Resource«Model»"
+						}
+					},
+					"201": {
+						"description": "Created"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"options": {
+				"tags": [
+					"Model Entity"
+				],
+				"summary": "optionsForCollectionResource",
+				"operationId": "optionsForCollectionResourceUsingOPTIONS_2",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			}
+		},
+		"/api/models/search/findAllModelsByType": {
+			"get": {
+				"tags": [
+					"Model Entity Search"
+				],
+				"summary": "/findAllModelsByType",
+				"operationId": "/findAllModelsByTypeUsingGET",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json",
+					"application/x-spring-data-compact+json"
+				],
+				"parameters": {
+					"in": "body",
+					"name": "param0",
+					"description": "param0",
+					"required": false,
+					"schema": {
+						"type": "string"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Model"
+							}
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/api/models/search/findByModelTypeNameIn": {
+			"get": {
+				"tags": [
+					"Model Entity Search"
+				],
+				"summary": "/findByModelTypeNameIn",
+				"operationId": "/findByModelTypeNameInUsingGET",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json",
+					"application/x-spring-data-compact+json"
+				],
+				"parameters": {
+					"name": "param0",
+					"in": "query",
+					"description": "param0",
+					"required": false,
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"collectionFormat": "multi"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Model"
+							}
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/api/models/search/findByPriceGreaterThanEqualAndPriceLessThanEqual": {
+			"get": {
+				"tags": [
+					"Model Entity Search"
+				],
+				"summary": "/findByPriceGreaterThanEqualAndPriceLessThanEqual",
+				"operationId": "/findByPriceGreaterThanEqualAndPriceLessThanEqualUsingGET",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json",
+					"application/x-spring-data-compact+json"
+				],
+				"parameters": {
+					"name": "param1",
+					"in": "query",
+					"description": "param1",
+					"required": false,
+					"type": "number"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Model"
+							}
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/api/models/search/queryByPriceRangeAndWoodType": {
+			"get": {
+				"tags": [
+					"Model Entity Search"
+				],
+				"summary": "/queryByPriceRangeAndWoodType",
+				"operationId": "/queryByPriceRangeAndWoodTypeUsingGET",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json",
+					"application/x-spring-data-compact+json"
+				],
+				"parameters": {
+					"in": "body",
+					"name": "param2",
+					"description": "param2",
+					"required": false,
+					"schema": {
+						"type": "string"
+					}
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Page«Model»"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/api/models/{id}": {
+			"get": {
+				"tags": [
+					"Model Entity"
+				],
+				"summary": "getItemResource",
+				"operationId": "getItemResourceUsingGET_2",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"parameters": {
+					"name": "id",
+					"in": "path",
+					"description": "id",
+					"required": true,
+					"type": "integer",
+					"format": "int64"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Resources«Model»"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"head": {
+				"tags": [
+					"Model Entity"
+				],
+				"summary": "headForItemResource",
+				"operationId": "headForItemResourceUsingHEAD_2",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"parameters": {
+					"name": "id",
+					"in": "path",
+					"description": "id",
+					"required": true,
+					"type": "integer",
+					"format": "int64"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			},
+			"put": {
+				"tags": [
+					"Model Entity"
+				],
+				"summary": "putItemResource",
+				"operationId": "putItemResourceUsingPUT_2",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"parameters": {
+					"name": "id",
+					"in": "path",
+					"description": "id",
+					"required": true,
+					"type": "integer",
+					"format": "int64"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Resources«Model»"
+						}
+					},
+					"201": {
+						"description": "Created"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"delete": {
+				"tags": [
+					"Model Entity"
+				],
+				"summary": "deleteItemResource",
+				"operationId": "deleteItemResourceUsingDELETE_2",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"parameters": {
+					"name": "id",
+					"in": "path",
+					"description": "id",
+					"required": true,
+					"type": "integer",
+					"format": "int64"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Resources«Model»"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			},
+			"options": {
+				"tags": [
+					"Model Entity"
+				],
+				"summary": "optionsForItemResource",
+				"operationId": "optionsForItemResourceUsingOPTIONS_2",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			},
+			"patch": {
+				"tags": [
+					"Model Entity"
+				],
+				"summary": "patchItemResource",
+				"operationId": "patchItemResourceUsingPATCH_2",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/*+json;charset=UTF-8",
+					"application/json",
+					"application/hal+json"
+				],
+				"parameters": {
+					"name": "id",
+					"in": "path",
+					"description": "id",
+					"required": true,
+					"type": "integer",
+					"format": "int64"
+				}],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/Resources«Model»"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			}
+		},
+		"/api/profile": {
+			"get": {
+				"tags": [
+					"profile-controller"
+				],
+				"summary": "listAllFormsOfMetadata",
+				"operationId": "listAllFormsOfMetadataUsingGET",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"*/*"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/ResourceSupport"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"options": {
+				"tags": [
+					"profile-controller"
+				],
+				"summary": "profileOptions",
+				"operationId": "profileOptionsUsingOPTIONS",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"*/*"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "object"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			}
+		},
+		"/api/profile/locations": {
+			"get": {
+				"tags": [
+					"Entity Metadata Services"
+				],
+				"summary": "schema",
+				"operationId": "schemaUsingGET_3",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/schema+json",
+					"*/*",
+					"application/alps+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/JsonSchema"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"options": {
+				"tags": [
+					"Entity Metadata Services"
+				],
+				"summary": "alpsOptions",
+				"operationId": "alpsOptionsUsingOPTIONS_3",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/alps+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "object"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			}
+		},
+		"/api/profile/mfgs": {
+			"get": {
+				"tags": [
+					"Entity Metadata Services"
+				],
+				"summary": "schema",
+				"operationId": "schemaUsingGET_1",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/schema+json",
+					"*/*",
+					"application/alps+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/JsonSchema"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"options": {
+				"tags": [
+					"Entity Metadata Services"
+				],
+				"summary": "alpsOptions",
+				"operationId": "alpsOptionsUsingOPTIONS_1",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/alps+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "object"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			}
+		},
+		"/api/profile/modelTypes": {
+			"get": {
+				"tags": [
+					"Entity Metadata Services"
+				],
+				"summary": "schema",
+				"operationId": "schemaUsingGET",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/schema+json",
+					"*/*",
+					"application/alps+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/JsonSchema"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"options": {
+				"tags": [
+					"Entity Metadata Services"
+				],
+				"summary": "alpsOptions",
+				"operationId": "alpsOptionsUsingOPTIONS",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/alps+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "object"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			}
+		},
+		"/api/profile/models": {
+			"get": {
+				"tags": [
+					"Entity Metadata Services"
+				],
+				"summary": "schema",
+				"operationId": "schemaUsingGET_2",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/schema+json",
+					"*/*",
+					"application/alps+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/JsonSchema"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"options": {
+				"tags": [
+					"Entity Metadata Services"
+				],
+				"summary": "alpsOptions",
+				"operationId": "alpsOptionsUsingOPTIONS_2",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/alps+json"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "object"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			}
+		},
+		"/error": {
+			"get": {
+				"tags": [
+					"basic-error-controller"
+				],
+				"summary": "errorHtml",
+				"operationId": "errorHtmlUsingGET",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"text/html"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/ModelAndView"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"head": {
+				"tags": [
+					"basic-error-controller"
+				],
+				"summary": "errorHtml",
+				"operationId": "errorHtmlUsingHEAD",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"text/html"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/ModelAndView"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			},
+			"post": {
+				"tags": [
+					"basic-error-controller"
+				],
+				"summary": "errorHtml",
+				"operationId": "errorHtmlUsingPOST",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"text/html"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/ModelAndView"
+						}
+					},
+					"201": {
+						"description": "Created"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"put": {
+				"tags": [
+					"basic-error-controller"
+				],
+				"summary": "errorHtml",
+				"operationId": "errorHtmlUsingPUT",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"text/html"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/ModelAndView"
+						}
+					},
+					"201": {
+						"description": "Created"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			},
+			"delete": {
+				"tags": [
+					"basic-error-controller"
+				],
+				"summary": "errorHtml",
+				"operationId": "errorHtmlUsingDELETE",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"text/html"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/ModelAndView"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			},
+			"options": {
+				"tags": [
+					"basic-error-controller"
+				],
+				"summary": "errorHtml",
+				"operationId": "errorHtmlUsingOPTIONS",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"text/html"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/ModelAndView"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			},
+			"patch": {
+				"tags": [
+					"basic-error-controller"
+				],
+				"summary": "errorHtml",
+				"operationId": "errorHtmlUsingPATCH",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"text/html"
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/ModelAndView"
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"204": {
+						"description": "No Content"
+					},
+					"403": {
+						"description": "Forbidden"
+					}
+				}
+			}
+		}
+	},
+	"definitions": {
+		"AbstractJsonSchemaProperty«object»": {
+			"type": "object",
+			"properties": {
+				"readOnly": {
+					"type": "boolean"
+				},
+				"title": {
+					"type": "string"
+				}
+			}
+		},
+		"RepositoryLinksResource": {
+			"type": "object",
+			"properties": {
+				"links": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Link"
+					}
+				}
+			}
+		},
+		"Resource«ModelType»": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "integer",
+					"format": "int64"
+				},
+				"links": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Link"
+					}
+				},
+				"models": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Model"
+					}
+				},
+				"name": {
+					"type": "string"
+				}
+			}
+		},
+		"HttpEntity": {
+			"type": "object",
+			"properties": {
+				"body": {
+					"type": "object"
+				}
+			}
+		},
+		"JsonSchema": {
+			"type": "object",
+			"properties": {
+				"$schema": {
+					"type": "string"
+				},
+				"definitions": {
+					"type": "object",
+					"additionalProperties": {
+						"$ref": "#/definitions/Item"
+					}
+				},
+				"description": {
+					"type": "string"
+				},
+				"properties": {
+					"type": "object",
+					"additionalProperties": {
+						"$ref": "#/definitions/AbstractJsonSchemaProperty«object»"
+					}
+				},
+				"requiredProperties": {
+					"$ref": "#/definitions/Collection«string»"
+				},
+				"title": {
+					"type": "string"
+				},
+				"type": {
+					"type": "string"
+				}
+			}
+		},
+		"ModelAndView": {
+			"type": "object",
+			"properties": {
+				"empty": {
+					"type": "boolean"
+				},
+				"model": {
+					"type": "object"
+				},
+				"modelMap": {
+					"type": "object",
+					"additionalProperties": {
+						"type": "object"
+					}
+				},
+				"reference": {
+					"type": "boolean"
+				},
+				"status": {
+					"type": "string",
+					"enum": [
+						"100",
+						"101",
+						"102",
+						"103",
+						"200",
+						"201",
+						"202",
+						"203",
+						"204",
+						"205",
+						"206",
+						"207",
+						"208",
+						"226",
+						"300",
+						"301",
+						"302",
+						"303",
+						"304",
+						"305",
+						"307",
+						"308",
+						"400",
+						"401",
+						"402",
+						"403",
+						"404",
+						"405",
+						"406",
+						"407",
+						"408",
+						"409",
+						"410",
+						"411",
+						"412",
+						"413",
+						"414",
+						"415",
+						"416",
+						"417",
+						"418",
+						"419",
+						"420",
+						"421",
+						"422",
+						"423",
+						"424",
+						"426",
+						"428",
+						"429",
+						"431",
+						"451",
+						"500",
+						"501",
+						"502",
+						"503",
+						"504",
+						"505",
+						"506",
+						"507",
+						"508",
+						"509",
+						"510",
+						"511"
+					]
+				},
+				"view": {
+					"$ref": "#/definitions/View"
+				},
+				"viewName": {
+					"type": "string"
+				}
+			}
+		},
+		"Page«Model»": {
+			"type": "object",
+			"properties": {
+				"content": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Model"
+					}
+				},
+				"first": {
+					"type": "boolean"
+				},
+				"last": {
+					"type": "boolean"
+				},
+				"number": {
+					"type": "integer",
+					"format": "int32"
+				},
+				"numberOfElements": {
+					"type": "integer",
+					"format": "int32"
+				},
+				"size": {
+					"type": "integer",
+					"format": "int32"
+				},
+				"sort": {
+					"$ref": "#/definitions/Sort"
+				},
+				"totalElements": {
+					"type": "integer",
+					"format": "int64"
+				},
+				"totalPages": {
+					"type": "integer",
+					"format": "int32"
+				}
+			}
+		},
+		"Collection«Manufacturer»": {
+			"type": "object"
+		},
+		"Item": {
+			"type": "object",
+			"properties": {
+				"properties": {
+					"type": "object",
+					"additionalProperties": {
+						"$ref": "#/definitions/AbstractJsonSchemaProperty«object»"
+					}
+				},
+				"requiredProperties": {
+					"$ref": "#/definitions/Collection«string»"
+				},
+				"type": {
+					"type": "string"
+				}
+			}
+		},
+		"Collection«Link»": {
+			"type": "object"
+		},
+		"Resources«Model»": {
+			"type": "object",
+			"properties": {
+				"content": {
+					"$ref": "#/definitions/Collection«Model»"
+				},
+				"links": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Link"
+					}
+				}
+			}
+		},
+		"Resources«Link»": {
+			"type": "object",
+			"properties": {
+				"content": {
+					"$ref": "#/definitions/Collection«Link»"
+				},
+				"links": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Link"
+					}
+				}
+			}
+		},
+		"Manufacturer": {
+			"type": "object",
+			"properties": {
+				"active": {
+					"type": "boolean"
+				},
+				"averageYearlySales": {
+					"type": "number"
+				},
+				"foundedDate": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"headquarters": {
+					"$ref": "#/definitions/Location"
+				},
+				"id": {
+					"type": "integer",
+					"format": "int64"
+				},
+				"models": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Model"
+					}
+				},
+				"name": {
+					"type": "string"
+				}
+			}
+		},
+		"Resource«Location»": {
+			"type": "object",
+			"properties": {
+				"country": {
+					"type": "string"
+				},
+				"id": {
+					"type": "integer",
+					"format": "int64"
+				},
+				"links": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Link"
+					}
+				},
+				"manufacturers": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Manufacturer"
+					}
+				},
+				"state": {
+					"type": "string"
+				}
+			}
+		},
+		"Sort": {
+			"type": "object"
+		},
+		"Collection«string»": {
+			"type": "object"
+		},
+		"ResourceSupport": {
+			"type": "object",
+			"properties": {
+				"links": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Link"
+					}
+				}
+			}
+		},
+		"Resources«Location»": {
+			"type": "object",
+			"properties": {
+				"content": {
+					"$ref": "#/definitions/Collection«Location»"
+				},
+				"links": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Link"
+					}
+				}
+			}
+		},
+		"Collection«Model»": {
+			"type": "object"
+		},
+		"Resource«Model»": {
+			"type": "object",
+			"properties": {
+				"frets": {
+					"type": "integer",
+					"format": "int32"
+				},
+				"id": {
+					"type": "integer",
+					"format": "int64"
+				},
+				"links": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Link"
+					}
+				},
+				"manufacturer": {
+					"$ref": "#/definitions/Manufacturer"
+				},
+				"modelType": {
+					"$ref": "#/definitions/ModelType"
+				},
+				"name": {
+					"type": "string"
+				},
+				"price": {
+					"type": "number"
+				},
+				"woodType": {
+					"type": "string"
+				},
+				"yearFirstMade": {
+					"type": "string",
+					"format": "date-time"
+				}
+			}
+		},
+		"Resources«ModelType»": {
+			"type": "object",
+			"properties": {
+				"content": {
+					"$ref": "#/definitions/Collection«ModelType»"
+				},
+				"links": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Link"
+					}
+				}
+			}
+		},
+		"Collection«ModelType»": {
+			"type": "object"
+		},
+		"View": {
+			"type": "object",
+			"properties": {
+				"contentType": {
+					"type": "string"
+				}
+			}
+		},
+		"Resources«Manufacturer»": {
+			"type": "object",
+			"properties": {
+				"content": {
+					"$ref": "#/definitions/Collection«Manufacturer»"
+				},
+				"links": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Link"
+					}
+				}
+			}
+		},
+		"Resource«Manufacturer»": {
+			"type": "object",
+			"properties": {
+				"active": {
+					"type": "boolean"
+				},
+				"averageYearlySales": {
+					"type": "number"
+				},
+				"foundedDate": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"headquarters": {
+					"$ref": "#/definitions/Location"
+				},
+				"id": {
+					"type": "integer",
+					"format": "int64"
+				},
+				"links": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Link"
+					}
+				},
+				"models": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Model"
+					}
+				},
+				"name": {
+					"type": "string"
+				}
+			}
+		},
+		"RepositorySearchesResource": {
+			"type": "object",
+			"properties": {
+				"links": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Link"
+					}
+				}
+			}
+		},
+		"Model": {
+			"type": "object",
+			"properties": {
+				"frets": {
+					"type": "integer",
+					"format": "int32"
+				},
+				"id": {
+					"type": "integer",
+					"format": "int64"
+				},
+				"manufacturer": {
+					"$ref": "#/definitions/Manufacturer"
+				},
+				"modelType": {
+					"$ref": "#/definitions/ModelType"
+				},
+				"name": {
+					"type": "string"
+				},
+				"price": {
+					"type": "number"
+				},
+				"woodType": {
+					"type": "string"
+				},
+				"yearFirstMade": {
+					"type": "string",
+					"format": "date-time"
+				}
+			}
+		},
+		"ModelType": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "integer",
+					"format": "int64"
+				},
+				"models": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Model"
+					}
+				},
+				"name": {
+					"type": "string"
+				}
+			}
+		},
+		"Collection«Location»": {
+			"type": "object"
+		},
+		"Link": {
+			"type": "object",
+			"properties": {
+				"href": {
+					"type": "string"
+				},
+				"rel": {
+					"type": "string"
+				},
+				"templated": {
+					"type": "boolean"
+				}
+			}
+		},
+		"Location": {
+			"type": "object",
+			"properties": {
+				"country": {
+					"type": "string"
+				},
+				"id": {
+					"type": "integer",
+					"format": "int64"
+				},
+				"manufacturers": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Manufacturer"
+					}
+				},
+				"state": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}

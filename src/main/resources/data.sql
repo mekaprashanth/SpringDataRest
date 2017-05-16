@@ -2,8 +2,18 @@ delete model;
 delete modeltype;
 delete manufacturer;
 delete location;
+delete appuser;
+delete authorities;
 
---alter table manufacturer add column active boolean not null;
+
+insert into appuser(id, username, password, enabled) values (1, 'prashanth', 'prashanth', true);
+insert into appuser(id, username, password, enabled) values (2, 'admin', 'admin', true);
+
+insert into authorities(id, authority, user_id) values (1, 'USER', 1);
+insert into authorities(id, authority, user_id) values (2, 'USER', 2);
+insert into authorities(id, authority, user_id) values (3, 'ADMIN', 2);
+
+insert into client_details(clientid, clientname, clientsecret, enabled) values (1, 'soa', 'peter', true);
 
 
 insert into location (id, country, state) values (1, 'United States', 'Alabama');
